@@ -1,7 +1,8 @@
 package academy_Baranov;
-// Русский текст
+// Р СѓСЃСЃРєРёР№ С‚РµРєСЃС‚
 public class Task1 {
 	public static void main (String [] Args) {
-		System.out.println ("Приветули!");
+		System.out.println ("Р СѓСЃСЃРєРёР№ С‚РµРєСЃС‚!");
 	}
 }
+				
