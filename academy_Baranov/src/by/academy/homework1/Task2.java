@@ -7,7 +7,7 @@ public class Task2 {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("Введите тип данных");
 		String type = scan.next();
-		System.out.println("Введите число");
+		System.out.println("Введите переменную");
 		String str = scan.next();
 		switch (type) {
 		case "int":
@@ -22,8 +22,12 @@ public class Task2 {
 			float f = Float.parseFloat(str);
 			System.out.println(f * f);
 			break;
-//		case "char":
-//			char ch = Character.parseChar();
+		case "char":
+			for (int k = 0; k < str.length(); k++) {
+				char symbol = str.charAt(k);
+				System.out.println(symbol);
+			}
+			break;
 		case "String":
 			System.out.println("Hello " + str);
 			break;
