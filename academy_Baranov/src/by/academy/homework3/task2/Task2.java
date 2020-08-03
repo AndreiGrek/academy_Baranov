@@ -62,7 +62,7 @@ public class Task2<T> {
 		}
 	}
 
-//	3) взятие последнего элемента getLast()
+//	3) взятие последнего элемента getLast() 
 	public T getLast() {
 		return array[array.length - 1];
 	}

@@ -6,6 +6,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		Task2<Integer> t2 = new Task2<>(5);
+
 		t2.add(10);
 		t2.add(12);
 		t2.add(10);
