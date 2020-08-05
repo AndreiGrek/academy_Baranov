@@ -30,9 +30,7 @@ public class Main {
 		enterDate();
 		MyCustomDate myDate2 = new MyCustomDate(date);
 		Calendar c2 = new GregorianCalendar(myDate2.year.getYear(), myDate2.month.getMonth() - 1, myDate2.day.getDay());
-		long firstDate = c.getTimeInMillis();
-		long secondDate = c2.getTimeInMillis();
-		daysBetween = myDate.getDaysBetween(firstDate, secondDate);
+		daysBetween = myDate.getDaysBetween(c.getTimeInMillis(), c2.getTimeInMillis());
 		System.out.println("Количество дней между первой заданной датой и второй заданной датой: " + daysBetween);
 		System.out.println("-----------");
 		System.out.println(myDate.year.isLeapYear(myDate.year.getYear()));
