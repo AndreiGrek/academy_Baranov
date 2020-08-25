@@ -20,7 +20,6 @@ public class Task2 {
 			BufferedReader br = new BufferedReader(new FileReader(text));
 			FileWriter fw = new FileWriter(result);
 			String s;
-//			String s = br.readLine();
 			while ((s = br.readLine()) != null) {
 				s = s.replaceAll(" ", "");
 				fw.write(s);
