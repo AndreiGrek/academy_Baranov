@@ -17,7 +17,7 @@ public class Task1 {
 		try {
 			FileWriter fw = new FileWriter(file);
 		
-			while (!"stop".equals(s)) {
+			while (!s.equals("stop")) {
 			fw.write(s + " ");
 			s = sc.nextLine();
 		}
