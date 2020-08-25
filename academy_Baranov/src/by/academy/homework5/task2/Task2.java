@@ -13,18 +13,20 @@ import java.io.IOException;
 public class Task2 {
 
 	public static void main(String[] args) {
-		File text = new File("src/by/academy/homework5/task2/Task2.txt");
-		File result = new File ("src/by/academy/homework5/task2/result.txt");
+		File text = new File("by/academy/homework5/task2/Task2.txt");
+		File result = new File ("by/academy/homework5/task2/result.txt");
 		
 		try {
 			BufferedReader br = new BufferedReader(new FileReader(text));
 			FileWriter fw = new FileWriter(result);
-			String s = br.readLine();
-			while (s != null) {
+			String s;
+//			String s = br.readLine();
+			while ((s = br.readLine()) != null) {
 				s = s.replaceAll(" ", "");
 				fw.write(s);
 			}
 			fw.close();
+			br.close();
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
