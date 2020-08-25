@@ -13,7 +13,7 @@ public class Task1 {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Введите строку");
 		String s = sc.nextLine();
-		File file = new File("src/by/academy/homework5/task1.txt");
+		File file = new File("by/academy/homework5/task1/task1.txt");
 		try {
 			FileWriter fw = new FileWriter(file);
 		
