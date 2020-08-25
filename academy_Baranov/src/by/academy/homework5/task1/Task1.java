@@ -1,4 +1,4 @@
-package homework5;
+package homework5.task1;
 
 import java.io.File;
 import java.io.FileWriter;
