@@ -6,14 +6,13 @@ package by.academy.classwork.lesson12;
 public class Task1 {
 
 	public static void main(String[] args) {
-		Printable pr = s -> System.out.println("Какой-то текст");
-		String s = "";
-		pr.print(s);
+		Printable pr = () -> System.out.println("Печатаем какой-то текст");
+		pr.print();
 
 	}
 
 }
 
 interface Printable {
-	void print(String s);
+	void print();
 }
