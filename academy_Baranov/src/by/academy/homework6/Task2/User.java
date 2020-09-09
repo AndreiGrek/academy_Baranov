@@ -49,6 +49,11 @@ public void setEmail(String email) {
 }
 
 
+@SuppressWarnings("unused")
+private void printUserInfo() {
+	System.out.println(toString());
+}
+
 @Override
 public String toString() {
 	return "User [login=" + login + ", password=" + password + ", email=" + email + "]";
